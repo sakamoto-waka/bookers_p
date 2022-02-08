@@ -1,2 +1,23 @@
-<h1>Books#new</h1>
-<p>Find me in app/views/books/new.html.erb</p>
+
+ <!-- <form class="new_book" action="#">-->
+ <!--     <div class="field">titleのフォーム</div>-->
+ <!--     <div class="field">bodyのフォーム</div>-->
+ <!--     <div class="action"-->
+<h2>New book</h2>
+  <%= form_with model: Book.new, local: true do |f| %>
+    <div class="field">
+      <label>
+        Title
+      </label>
+        <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <label>
+        Body
+      </label>
+        <%= f.text_area :body %>
+    </div>
+    <div class='action'>
+      <%= f.submit 'Create Book' %>
+    </div>
+  <% end %>

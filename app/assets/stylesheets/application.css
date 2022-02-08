@@ -67,6 +67,10 @@ td {
     padding: 0 5px 7px 5px;
 }
 
+.field {
+    display: block;
+}
+
 h2 {
     display: block;
     margin: 16px 0;
