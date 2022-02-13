@@ -15,6 +15,7 @@
           </thead>
           <tbody>
             <% @books.each do |book| %>
+            <!--テーブルの中身が記載されている-->
             <tr>
                 <td><%= book.title %></td>
                 <td><%= book.body %></td>
@@ -31,13 +32,13 @@
           <div id="error-explain">
             <div class="error-heading">
               <p><%= @book.errors.count %> errors prohibited this book from being saved:</p>
-            </div>  
+            </div>
             <ul>
               <% @book.errors.full_messages.each do |message| %>
                 <li><%= message %></li>
               <% end %>
             </ul>
-          </div>  
+          </div>
           <% end %>
 
         <div class="book-create">
