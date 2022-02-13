@@ -91,3 +91,48 @@ td {
 #notice {
     color: green
 }
+
+.edit-form {
+    margin: 0 0 10px;
+}
+
+.edit-botton {
+    margin: 0 0 10px;
+}
+
+.show-p {
+    margin: 33px;
+}
+
+input {
+    padding: 1px 10px;
+}
+
+.book_title {
+    padding: 0;
+    margin: 0;
+}
+
+#error-explain {
+    width: 450px;
+    border: 2px solid red;
+    margin: 0 0 20px;
+    padding: 7px 7px 0;
+    background-color: #f0f0f0
+}
+
+#error-explain p {
+    padding: 5px 5px 5px 15px;
+    text-align: left;
+    font-weight: bold;
+    color: #fff
+}
+.error-heading {
+    margin: -7px -7px 0;
+    background-color: #cc0000;
+}
+
+#error-explain ul {
+    margin: 33px;
+    padding: 0 0 0 40px;
+}

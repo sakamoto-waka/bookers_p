@@ -2,15 +2,15 @@
   <% if flash[:notice] %>
     <p id="notice"><%= flash[:notice] %></p>
   <% end %>
-  <p>
+  <p class="show-p">
     <strong>Title:</strong> <%= @book.title %>
   </p>
 
-  <p>
+  <p class="show-p">
     <strong>Body:</strong> <%= @book.body %>
   </p>
 
   <%= link_to 'Edit', edit_book_path(@book.id) %>
-  <span>|</span>
+   |
   <%= link_to 'Back', books_path %>
 </body>
